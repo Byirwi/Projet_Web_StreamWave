@@ -1,0 +1,62 @@
+<html>
+    
+    <head>
+        <title>StreamWave</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="..\CSS\Page_login.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  </head>
+  <body>
+    <header>
+        <!-- Début de la barre de navigation -->    
+        <nav>
+            <div class="gauche">
+            <a href="Page_Garde.php">
+                <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
+            </a>
+            </div>
+            <div class="droite">
+            <a href="Page_Login.php">
+                  <p>Conexion</p>
+                </a>
+            </div>
+        </nav>
+          <!-- Fin de la barre de navigation -->
+    </header>
+    <div class="test2">          <!-- Section formulaire -->
+        <div class="login-container">
+            <div class="login-box">
+                <h1>Connexion</h1>
+                <form action="Page_Accueil.php" id="login-form" class="form_style">
+                    <div class="mail_password_box">
+                        <div class="form-group">
+                            <label for="email">Adresse e-mail</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Mot de passe</label>
+                            <input type="password" id="password" name="password">
+                        </div>
+                    </div>
+
+                    <div class="login-button">
+                        <button type="submit" >S'identifier</button>
+                    </div>
+                        
+                    
+                </form>
+                <div class="login-help">
+                    <a href="#">Mot de passe oublié ?</a>
+                    <a href="#">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+                    <!-- Fin Section formulaire -->
+            <!-- background img -->
+            <div class="background_img">
+                <img src="..\Ressources\background\Netflix_background.png" alt="">
+            </div>
+            <!-- fin background img -->  
+    </div> 
+  </body>
+</html>
