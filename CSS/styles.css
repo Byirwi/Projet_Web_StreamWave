@@ -1,0 +1,254 @@
+/* Style général du corps */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+
+/* Conteneur pour l'image de fond */
+.container_background {
+    position: relative;
+}
+
+/* Style de l'image de fond */
+.background_img {
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.background_img img {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+/* Style de la navigation */
+nav {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: #ffffff;
+    padding: 0 25px;
+    z-index: 2;
+    height: 50px;
+    background-color: black;
+}
+
+nav .gauche {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .gauche img {
+    padding-top: 5px;
+}
+
+nav .gauche .onglets {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+}
+
+nav .gauche .onglets p {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #909191;
+}
+
+nav .gauche .onglets p:hover {
+    color: #fff;
+}
+
+nav .droite {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav .droite a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .droite p {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Style pour les tests */
+.test2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(75vh);
+}
+
+/* Style du formulaire */
+.form_style {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    margin: 5;
+}
+
+.login-box h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.mail_password_box input {
+    display: flex;
+    row-gap: 5px;
+    justify-content: center;
+}
+
+/* Conteneur de connexion */
+.login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    background: rgb(0 0 0 / 0.8);
+    width: 25%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.login-container h1 {
+    color: #909191;
+    cursor: pointer;
+}
+
+.login-help {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.login-help a {
+    text-decoration: none;
+    color: white;
+}
+
+.login-help a:hover {
+    color: #909191;
+}
+
+.login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_button {
+    color: #ffffff;
+    z-index: 3;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Identifiant de connexion */
+.identifier_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    height: calc(100vh - 383px);
+    position: relative;
+    z-index: 2;
+    background: rgb(0 0 0 / 0.8);
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.identifier_login a {
+    color: white;
+    text-decoration: none;
+}
+
+.s-identifier {
+    position: relative;
+    z-index: 3;
+    background-color: red;
+    margin: 10px 10px 10px 10px;
+    width: fit-content;
+}
+
+/* Style des films et séries */
+.films-et-series {
+    background-color: #191a1a;
+    padding: 25px;
+}
+
+.films-et-series .section {
+    margin-bottom: 55px;
+}
+
+.films-et-series .section h2 {
+    color: #fff;
+}
+
+.films-et-series .section .list {
+    display: flex;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.films-et-series .section a {
+    padding-left: 5px;
+    transition: transform 0.25s;
+}
+
+.films-et-series .section a:hover {
+    transform: scale(1.05);
+}
+
+.films-et-series .section a img {
+    height: 140px;
+}
+
+/* Style du pied de page */
+footer {
+    background-color: #000;
+    padding: 25px 100px;
+    color: #909191;
+}
+
+footer .colonnes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+footer .colonnes p {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #909191;
+}
+
+footer .colonnes p:hover {
+    color: #fff;
+}

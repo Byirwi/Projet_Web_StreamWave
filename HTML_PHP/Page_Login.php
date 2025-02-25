@@ -3,7 +3,7 @@
     <head>
         <title>StreamWave</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="..\CSS\Page_login.css">
+        <link rel="stylesheet" href="..\CSS\styles.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
   <body>
