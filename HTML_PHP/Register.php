@@ -6,34 +6,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // Requête pour vérifier le nom d'utilisateur dans login_streamwave
-    $query = "SELECT * FROM login_streamwave WHERE username = ?";
-    $stmt = $conn->prepare($query);
+    // Vérifier si le nom d'utilisateur existe déjà
+    $queryCheck = "SELECT * FROM login_streamwave WHERE username = ?";
+    $stmt = $conn->prepare($queryCheck);
     $stmt->bind_param("s", $username);
     $stmt->execute();
     $result = $stmt->get_result();
 
-    if ($result->num_rows === 1) {
-        $user = $result->fetch_assoc();
-        // Vérification du mot de passe (vérification simple)
-        if ($password == $user['password']) {
-            $_SESSION['user_id'] = $user['id'];
-            header("Location: Accueil.php"); // Redirection modifiée vers Accueil.php
-            exit();
-        } else {
-            $error = "Nom d'utilisateur ou mot de passe incorrect.";
-        }
+    if ($result->num_rows > 0) {
+        $error = "Nom d'utilisateur déjà existant.";
     } else {
-        $error = "Nom d'utilisateur ou mot de passe incorrect.";
+        // Insertion du nouvel utilisateur
+        $insertQuery = "INSERT INTO login_streamwave (username, password) VALUES (?, ?)";
+        $stmt = $conn->prepare($insertQuery);
+        $stmt->bind_param("ss", $username, $password);
+        if ($stmt->execute()) {
+            $success = "Compte créé avec succès. Vous pouvez maintenant vous connecter.";
+        } else {
+            $error = "Erreur lors de la création du compte.";
+        }
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>StreamWave</title>
+    <title>Créer un compte</title>
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
@@ -54,16 +53,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </nav>
         <!-- Fin de la barre de navigation -->
     </header>
-    <div class="test2">          <!-- Section formulaire -->
+    <div class="test2">
         <div class="login-container">
             <div class="login-box">
-                <h1>Connexion</h1>
+                <h1>Créer un compte</h1>
                 <?php
-                if (isset($error)) {
-                    echo "<p style='color:red;'>$error</p>";
-                }
+                if (isset($error)) { echo "<p style='color:red;'>$error</p>"; }
+                if (isset($success)) { echo "<p style='color:green;'>$success</p>"; }
                 ?>
-                <form action="login.php" method="post" id="login-form" class="form_style">
+                <form action="Register.php" method="post" id="register-form" class="form_style">
                     <div class="mail_password_box">
                         <div class="form-group">
                             <label for="username">Nom d'utilisateur</label>
@@ -74,23 +72,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             <input type="password" id="password" name="password" required>
                         </div>
                     </div>
-
                     <div class="login-button">
-                        <button type="submit">S'identifier</button>
+                        <button type="submit">Créer un compte</button>
                     </div>
                 </form>
                 <div class="login-help">
-                    <a href="../Forgot_password.php">Mot de passe oublié ?</a>
-                    <a href="Register.php">Créer un compte</a>  <!-- Lien mis à jour pour register -->
+                    <a href="Login.php">Se connecter</a>
                 </div>
             </div>
         </div>
-        <!-- Fin Section formulaire -->
         <!-- background img -->
         <div class="background_img">
             <img src="../Ressources/background/Netflix_background.png" alt="">
         </div>
         <!-- fin background img -->  
-    </div> 
+    </div>
 </body>
 </html>

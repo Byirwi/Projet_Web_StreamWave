@@ -10,13 +10,13 @@
         <!-- Début de la barre de navigation -->    
         <nav>
             <div class="gauche">
-                <a href="Page_Garde.html">
+                <a href="Garde.php">
                   <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
               </a>
             </div>
             <div class="droite">
-                <a href="Page_Login.html">
-                  <p>Conexion</p>
+                <a href="Login.php">
+                  <p>Connexion</p>
                 </a>
             </div>
         </nav>
@@ -32,7 +32,7 @@
      <div class="login_container">
       <div class="identifier_login">
           <p class="login_button">pour acceder au catalogue</p>
-          <a href="Page_Login.html">
+          <a href="Login.php">
           <p class="s-identifier">s'identifier</p>
           </a>
       </div>

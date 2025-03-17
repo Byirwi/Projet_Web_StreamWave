@@ -10,7 +10,7 @@
     <nav>
         
       <div class="gauche">
-      <a href="Page_Garde.html" class="img_logo">
+      <a href="Garde.php" class="img_logo">
         <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
       </a>
         <div class="onglets">
