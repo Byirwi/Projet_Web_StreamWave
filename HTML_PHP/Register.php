@@ -57,10 +57,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="login-container">
             <div class="login-box">
                 <h1>Créer un compte</h1>
-                <?php
-                if (isset($error)) { echo "<p style='color:red;'>$error</p>"; }
-                if (isset($success)) { echo "<p style='color:green;'>$success</p>"; }
-                ?>
+                <?php if(isset($error)) { echo "<p style='color:red;'>$error</p>"; } ?>
+                <?php if(isset($success)) { echo "<p style='color:green;'>$success</p>"; } ?>
                 <form action="Register.php" method="post" id="register-form" class="form_style">
                     <div class="mail_password_box">
                         <div class="form-group">
@@ -77,7 +75,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </form>
                 <div class="login-help">
-                    <a href="Login.php">Se connecter</a>
+                    <a href="Login.php">Page de connexion</a>
                 </div>
             </div>
         </div>
@@ -87,5 +85,37 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <!-- fin background img -->  
     </div>
+    <footer>
+        <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
+        <div class="colonnes">
+            <div class="colonne">
+                <p>FAQ</p>
+                <p>Relations Investisseurs</p>
+                <p>Modes de lecture</p>
+                <p>Mentions légales</p>
+                <p>Programmes originaux Netflix</p>
+            </div>
+            <div class="colonne">
+                <p>Centre d'aide</p>
+                <p>Relations Investisseurs</p>
+                <p>Modes de lecture</p>
+                <p>Mentions légales</p>
+                <p>Programmes originaux Netflix</p>
+            </div>
+            <div class="colonne">
+                <p>FAQ</p>
+                <p>Recrutement</p>
+                <p>Conditions d'utilisation</p>
+                <p>Nous contacter</p>
+            </div>
+            <div class="colonne">
+                <p>Compte</p>
+                <p>Utiliser des cartes cadeaux</p>
+                <p>Confidentialité</p>
+                <p>Test de vitesse</p>
+            </div>
+        </div>
+        <p>StreamWave, France</p>
+    </footer>
 </body>
 </html>

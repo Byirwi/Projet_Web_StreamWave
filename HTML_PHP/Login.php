@@ -28,7 +28,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -80,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     </div>
                 </form>
                 <div class="login-help">
-                    <a href="../Forgot_password.php">Mot de passe oublié ?</a>
+                    <a href="Forgot_password.php">Mot de passe oublié ?</a>
                     <a href="Register.php">Créer un compte</a>  <!-- Lien mis à jour pour register -->
                 </div>
             </div>

@@ -39,7 +39,7 @@
     </div>
     <!-- fin Login button -->
     <!-- Pied de page -->
-    <footer>
+    <footer style="position: absolute; bottom: 0; width: 100%; background-color: black;">
       <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
       <div class="colonnes">
         <div class="colonne">
