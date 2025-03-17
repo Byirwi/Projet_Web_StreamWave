@@ -55,7 +55,7 @@
       <section class="section series-divers">
         <h2>Séries divers</h2>
         <div class="list">
-          <a href=""><img src="..\Ressources\img films_series\séries divers\o3.PNG" alt=""></a> <!-- ..\Ressources\img films_series\séries divers\r1.PNG -->
+          <a href="Film_detail\Jessica_jones.html"><img src="..\Ressources\img films_series\séries divers\o3.PNG" alt=""></a> <!-- ..\Ressources\img films_series\séries divers\r1.PNG -->
           <a href=""><img src="..\Ressources\img films_series\séries divers\r1.PNG" alt=""></a>
           <a href=""><img src="..\Ressources\img films_series\séries divers\tv1.PNG" alt=""></a>
           <a href=""><img src="..\Ressources\img films_series\séries divers\tv2.PNG" alt=""></a>
