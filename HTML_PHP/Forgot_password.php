@@ -38,6 +38,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Mot de passe oublié</title>
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <style>
+        body {
+            background-image: url('../images/background.jpg'); // update path as needed
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -54,7 +67,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </nav>
     </header>
-    <div>
+    <div class="content">
         <div class="form-container">
             <div class="login-container">
                 <div class="login-box">

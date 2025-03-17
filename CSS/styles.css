@@ -41,9 +41,6 @@ nav {
     background-color: black;
 }
 
-nav { margin-top: 0 !important; }
-.login-container { width: 25% !important; }
-
 /* Added to center the links within the nav containers */
 nav .gauche, 
 nav .droite {
@@ -110,9 +107,7 @@ nav .droite p {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    text-align: center;
-    height: calc(75vh); /* or adjust as needed */
+    height: calc(75vh);
 }
 
 /* Style du formulaire */
@@ -131,12 +126,6 @@ nav .droite p {
     gap: 5px;
     flex-direction: column;
     margin: 5;
-}
-
-.login-box {
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
 }
 
 .login-box h1 {
@@ -309,14 +298,14 @@ footer .colonnes p:hover {
 
 /* Nouvelle règle pour ajuster la hauteur des boutons */
 button {
-    display: flex;
-    height: 30px;
-    line-height: 50px; 
-    border: none;
-    border-radius: 4px;
+    height: 50px;            /* Hauteur du bouton ajustée */
+    line-height: 50px;       /* Alignement vertical du texte */
+    font-size: 16px;         /* Taille de police */
+    background-color:rgb(15, 15, 15); /* Couleur de fond */
+    border: none;            /* Pas de bordure */
+    border-radius: 4px;      /* Coins arrondis */
+    color: white;
     cursor: pointer;
-    align-items: center;
-    
 }
 button:hover {
     background-color: #5f5f5f;
