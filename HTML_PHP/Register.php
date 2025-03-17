@@ -35,6 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Créer un compte</title>
     <link rel="stylesheet" href="../CSS/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <!-- Override nav margin for flush-to-top -->
+    <style>
+      nav { margin-top: 0 !important; }
+    </style>
 </head>
 <body>
     <header>
@@ -53,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </nav>
         <!-- Fin de la barre de navigation -->
     </header>
-    <div class="test2">
+    <div class="form-container">
         <div class="login-container">
             <div class="login-box">
                 <h1>Créer un compte</h1>

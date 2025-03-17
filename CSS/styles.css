@@ -28,24 +28,32 @@ body {
 
 /* Style de la navigation */
 nav {
+    margin-top: 10px; /* Augmente la marge supérieure pour déplacer la nav plus bas */
+    padding: 0 25px;
     position: relative;
     display: flex;
+    align-items: center; /* Centrage vertical ajouté */
     flex-wrap: wrap;
     justify-content: space-between;
     color: #ffffff;
-    padding: 0 25px;
     z-index: 2;
     height: 50px;
     background-color: black;
 }
 
+nav { margin-top: 0 !important; }
+.login-container { width: 25% !important; }
+
+/* Added to center the links within the nav containers */
+nav .gauche, 
+nav .droite {
+    display: flex;
+    align-items: center;
+}
+
 nav .gauche {
     display: flex;
     flex-wrap: wrap;
-}
-
-nav .gauche img {
-    padding-top: 5px;
 }
 
 nav .gauche .onglets {
@@ -73,6 +81,7 @@ nav .gauche .onglets a {
     padding: 0;       /* Remove padding */
     font-weight: normal; /* Match font style with p */
     transition: color 0.3s;
+    margin-top: -5px; /* Lève les liens de la nav de 5px */
 }
 
 nav .gauche .onglets a:hover {
@@ -87,6 +96,8 @@ nav .droite {
 nav .droite a {
     color: white;
     text-decoration: none;
+    margin-right: 15px; /* Ajout d'une marge pour espacer les images/icônes */
+    margin-top: -5px; /* Lève les liens de la nav de 5px */
 }
 
 nav .droite p {
@@ -95,11 +106,13 @@ nav .droite p {
 }
 
 /* Style pour les tests */
-.test2 {
+.form-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(75vh);
+    margin: 0 auto;
+    text-align: center;
+    height: calc(75vh); /* or adjust as needed */
 }
 
 /* Style du formulaire */
@@ -118,6 +131,12 @@ nav .droite p {
     gap: 5px;
     flex-direction: column;
     margin: 5;
+}
+
+.login-box {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .login-box h1 {
@@ -290,13 +309,11 @@ footer .colonnes p:hover {
 
 /* Nouvelle règle pour ajuster la hauteur des boutons */
 button {
-    height: 50px;            /* Hauteur du bouton ajustée */
-    line-height: 50px;       /* Alignement vertical du texte */
-    font-size: 16px;         /* Taille de police */
-    background-color:rgb(15, 15, 15); /* Couleur de fond */
-    border: none;            /* Pas de bordure */
-    border-radius: 4px;      /* Coins arrondis */
-    color: white;
+    height: 50px;
+    line-height: 50px; 
+    background-color:rgb(15, 15, 15);
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
 button:hover {
