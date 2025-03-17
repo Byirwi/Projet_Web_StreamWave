@@ -2,7 +2,7 @@
 session_start();
 ini_set('display_errors', 1);
 error_reporting(E_ALL);
-include('../Test/config.php'); // Inclusion du fichier de configuration
+include('config.php'); // inclus le fichier de configuration correctement
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];

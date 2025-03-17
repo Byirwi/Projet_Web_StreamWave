@@ -14,18 +14,18 @@
         <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
       </a>
         <div class="onglets">
-          <p>Accueil</p>
-          <p>Séries TV</p>
-          <p>Films</p>
-          <p>Programmes originaux</p>
-          <p>Ajouts récents</p>
-          <p>Ma liste</p>
+          <a href="Accueil.php">Accueil</a>
+          <a href="#">Séries TV</a>
+          <a href="#">Films</a>
+          <a href="#">Programmes originaux</a>
+          <a href="#">Ajouts récents</a>
+          <a href="#">Ma liste</a>
         </div>
       </div>
       <div class="droite">
-        <p><i class="fas fa-search"></i></p>
-        <p><i class="fas fa-bell"></i></p>
-        <p>Mon compte</p>
+        <a href="#"><i class="fas fa-search"></i></a>
+        <a href="#"><i class="fas fa-bell"></i></a>
+        <a href="#">Mon compte</a>
       </div>
       
     </nav>

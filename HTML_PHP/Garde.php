@@ -15,9 +15,7 @@
               </a>
             </div>
             <div class="droite">
-                <a href="Login.php">
-                  <p>Connexion</p>
-                </a>
+                <a href="Login.php">Connexion</a>
             </div>
         </nav>
           <!-- Fin de la barre de navigation -->

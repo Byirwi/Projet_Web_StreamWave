@@ -1,6 +1,6 @@
 <?php
 session_start();
-include('../Test/config.php'); // updated config inclusion
+include('config.php'); // inclus le fichier de configuration correctement
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];

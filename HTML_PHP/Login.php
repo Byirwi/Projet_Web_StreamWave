@@ -1,22 +1,29 @@
 <?php
 session_start();
-include('../Test/config.php'); // updated config inclusion
+include('config.php'); // updated config inclusion
+
+// Ensure $conn is initialized using DB credential variables defined in config.php
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $userName = $_POST['username']; // renamed variable for user input
+    $userPassword = $_POST['password']; // renamed variable for user input
 
     // Requête pour vérifier le nom d'utilisateur dans login_streamwave
     $query = "SELECT * FROM login_streamwave WHERE username = ?";
     $stmt = $conn->prepare($query);
-    $stmt->bind_param("s", $username);
+    $stmt->bind_param("s", $userName); // use the renamed variable
     $stmt->execute();
     $result = $stmt->get_result();
 
     if ($result->num_rows === 1) {
         $user = $result->fetch_assoc();
         // Vérification du mot de passe (vérification simple)
-        if ($password == $user['password']) {
+        if ($userPassword == $user['password']) { // use the renamed variable
             $_SESSION['user_id'] = $user['id'];
             header("Location: Accueil.php"); // Redirection modifiée vers Accueil.php
             exit();
@@ -46,9 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
             </div>
             <div class="droite">
-                <a href="Login.php">
-                    <p>Connexion</p>
-                </a>
+                <a href="Login.php">Connexion</a>
             </div>
         </nav>
         <!-- Fin de la barre de navigation -->
