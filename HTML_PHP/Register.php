@@ -1,30 +1,38 @@
 <?php
 session_start();
-include('config.php'); // inclus le fichier de configuration correctement
+require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php"); // Inclusion de Config.php depuis le dossier PHP
+require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+    $username = trim($_POST['username']); // Récupération et nettoyage du nom d'utilisateur
+    $password = trim($_POST['password']); // Récupération et nettoyage du mot de passe
 
-    // Vérifier si le nom d'utilisateur existe déjà
-    $queryCheck = "SELECT * FROM login_streamwave WHERE username = ?";
-    $stmt = $conn->prepare($queryCheck);
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
-
-    if ($result->num_rows > 0) {
-        $error = "Nom d'utilisateur déjà existant.";
-    } else {
-        // Insertion du nouvel utilisateur
-        $insertQuery = "INSERT INTO login_streamwave (username, password) VALUES (?, ?)";
-        $stmt = $conn->prepare($insertQuery);
-        $stmt->bind_param("ss", $username, $password);
-        if ($stmt->execute()) {
-            $success = "Compte créé avec succès. Vous pouvez maintenant vous connecter.";
+    // Vérifier si l'utilisateur existe déjà
+    $queryCheck = "SELECT id FROM login_streamwave WHERE username = ?";
+    if ($stmt = $conn->prepare($queryCheck)) {
+        $stmt->bind_param("s", $username);
+        $stmt->execute();
+        $result = $stmt->get_result();
+        if ($result->num_rows > 0) {
+            $error = "Nom d'utilisateur déjà existant.";
         } else {
-            $error = "Erreur lors de la création du compte.";
+            // Insertion du nouvel utilisateur
+            $insertQuery = "INSERT INTO login_streamwave (username, password) VALUES (?, ?)";
+            if ($stmtInsert = $conn->prepare($insertQuery)) {
+                $stmtInsert->bind_param("ss", $username, $password);
+                if ($stmtInsert->execute()) {
+                    $success = "Compte créé avec succès. Vous pouvez maintenant vous connecter.";
+                } else {
+                    $error = "Erreur lors de la création du compte.";
+                }
+                $stmtInsert->close();
+            } else {
+                $error = "Erreur interne lors de la préparation de la requête d'insertion.";
+            }
         }
+        $stmt->close();
+    } else {
+        $error = "Erreur interne lors de la préparation de la requête de vérification.";
     }
 }
 ?>
@@ -38,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <header>
-        <!-- Début de la barre de navigation -->    
+        <!-- Début de la barre de navigation -->
         <nav>
             <div class="gauche">
                 <a href="Garde.php">
@@ -57,8 +65,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <div class="login-container">
             <div class="login-box">
                 <h1>Créer un compte</h1>
-                <?php if(isset($error)) { echo "<p style='color:red;'>$error</p>"; } ?>
-                <?php if(isset($success)) { echo "<p style='color:green;'>$success</p>"; } ?>
+                <?php 
+                if(isset($error)) { echo "<p style='color:red;'>$error</p>"; } 
+                if(isset($success)) { echo "<p style='color:green;'>$success</p>"; } 
+                ?>
                 <form action="Register.php" method="post" id="register-form" class="form_style">
                     <div class="mail_password_box">
                         <div class="form-group">
@@ -79,15 +89,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
             </div>
         </div>
-        <!-- background img -->
+        <!-- Image de fond -->
         <div class="background_img">
             <img src="../Ressources/background/Netflix_background.png" alt="">
         </div>
-        <!-- fin background img -->  
     </div>
     <footer>
+        <!-- Pied de page -->
         <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
         <div class="colonnes">
+            <!-- Colonnes du pied de page -->
             <div class="colonne">
                 <p>FAQ</p>
                 <p>Relations Investisseurs</p>

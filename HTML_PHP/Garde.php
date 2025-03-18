@@ -19,19 +19,19 @@
             </div>
         </nav>
           <!-- Fin de la barre de navigation -->
-            <!-- background img -->
+            <!-- Image de fond -->
         <div class="background_img">
             <img src="..\Ressources\background\Netflix_background.png" alt="">
         </div>
     </div> 
     <!-- fin background img --> 
 
-    <!-- Login button -->
+    <!-- Bouton de connexion -->
      <div class="login_container">
       <div class="identifier_login">
-          <p class="login_button">pour acceder au catalogue</p>
+          <p class="login_button">Pour accéder au catalogue</p>
           <a href="Login.php">
-          <p class="s-identifier">s'identifier</p>
+          <p class="s-identifier">S'identifier</p>
           </a>
       </div>
     </div>
@@ -62,7 +62,7 @@
         </div>
         <div class="colonne">
           <p>Compte</p>
-          <p>Utiliser des cartes pas tres cadeaux</p>
+          <p>Utiliser des cartes cadeaux</p>
           <p>Confidentialité</p>
           <p>Test de vitesse</p>
         </div>

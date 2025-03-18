@@ -28,11 +28,11 @@ body {
 
 /* Style de la navigation */
 nav {
-    margin-top: 10px; /* Augmente la marge supérieure pour déplacer la nav plus bas */
+    margin-top: 10px; /* Ajustable */
     padding: 0 25px;
     position: relative;
     display: flex;
-    align-items: center; /* Centrage vertical ajouté */
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     color: #ffffff;
@@ -41,7 +41,7 @@ nav {
     background-color: black;
 }
 
-/* Added to center the links within the nav containers */
+/* Centrage des liens de navigation */
 nav .gauche, 
 nav .droite {
     display: flex;
@@ -107,25 +107,21 @@ nav .droite p {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(75vh);
+    height: calc(75vh); /* Ajustable */
 }
 
 /* Style du formulaire */
 .form_style {
     color: white;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    align-content: space-around;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
 .form-group {
     display: flex;
-    gap: 5px;
     flex-direction: column;
-    margin: 5;
+    gap: 5px;
 }
 
 .login-box h1 {
@@ -144,14 +140,19 @@ nav .droite p {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    z-index: 2;
-    background: rgb(0 0 0 / 0.8);
-    width: 25%;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    width: 50%;
+    padding: 20px 20px;
+    position: relative;  /* Ensure its positioned */
+    z-index: 2;          /* Place above the background */
 }
 
+/* Specific adjustments for forgot password card if needed */
+.login-container.forgot {
+    width: 25%;         
+    margin: 100 px auto;
+    padding: 10px 0;
+}
 .login-container h1 {
     color: #909191;
     cursor: pointer;
@@ -278,32 +279,28 @@ footer .colonnes p:hover {
 /* Center image */
 .center-image {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%; /* Ajustez la largeur selon vos besoins */
-    align-items: center;
-
+    margin: 0 auto;
+    width: 15%;
 }
-.content {
+.content, .content_resumer {
     display: flex;
     justify-content: center;
     color: white;
 }
-.content_resumer{
+.content_resumer {
     width: 50%;
-    color: white;
-    display: flex;
-    align-items: center;
 }
-
-/* Nouvelle règle pour ajuster la hauteur des boutons */
+.content_resumer h1 {
+    text-align: center;
+}
+/* Style de la page de connexion */
 button {
-    height: 50px;            /* Hauteur du bouton ajustée */
-    line-height: 50px;       /* Alignement vertical du texte */
-    font-size: 16px;         /* Taille de police */
-    background-color:rgb(15, 15, 15); /* Couleur de fond */
-    border: none;            /* Pas de bordure */
-    border-radius: 4px;      /* Coins arrondis */
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    background-color: rgb(15, 15, 15);
+    border: none;
+    border-radius: 4px;
     color: white;
     cursor: pointer;
 }
