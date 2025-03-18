@@ -24,9 +24,9 @@
             <img src="..\Ressources\background\Netflix_background.png" alt="">
         </div>
     </div> 
-    <!-- fin background img --> 
+    <!-- Fin de l'image de fond --> 
 
-    <!-- Bouton de connexion -->
+    <!-- Section de connexion -->
      <div class="login_container">
       <div class="identifier_login">
           <p class="login_button">Pour accéder au catalogue</p>
@@ -35,7 +35,7 @@
           </a>
       </div>
     </div>
-    <!-- fin Login button -->
+    <!-- Fin de la section de connexion -->
     <!-- Pied de page -->
     <footer style="position: absolute; bottom: 0; width: 100%; background-color: black;">
       <h5>Des questions ? Appelez le 06 46 24 86 76</h5>

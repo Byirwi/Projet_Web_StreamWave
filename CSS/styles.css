@@ -1,4 +1,4 @@
-/* Style général du corps */
+/* Style général du corps de la page */
 body {
     padding: 0;
     margin: 0;
@@ -11,7 +11,7 @@ body {
     position: relative;
 }
 
-/* Style de l'image de fond */
+/* Style de l'image d'arrière-plan */
 .background_img {
     height: 100vh;
     width: 100%;
@@ -26,9 +26,9 @@ body {
     opacity: 0.5;
 }
 
-/* Style de la navigation */
+/* Style de la barre de navigation */
 nav {
-    margin-top: 10px; /* Ajustable */
+    margin-top: 10px; /* Ajustable selon besoin */
     padding: 0 25px;
     position: relative;
     display: flex;
@@ -41,7 +41,7 @@ nav {
     background-color: black;
 }
 
-/* Centrage des liens de navigation */
+/* Centrage des éléments dans la barre de navigation */
 nav .gauche, 
 nav .droite {
     display: flex;

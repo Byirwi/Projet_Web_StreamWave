@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
   <body>
-         <!-- Début de la barre de navigation -->    
+    <!-- Début de la barre de navigation -->    
     <nav>
-        
       <div class="gauche">
       <a href="Garde.php" class="img_logo">
         <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
@@ -27,9 +26,8 @@
         <a href="#"><i class="fas fa-bell"></i></a>
         <a href="#">Mon compte</a>
       </div>
-      
     </nav>
-        <!-- Fin de la barre de navigation -->
+    <!-- Fin de la barre de navigation -->
 <!-- Les films et séries -->
 <section class="films-et-series">
       <!-- Les tendances -->

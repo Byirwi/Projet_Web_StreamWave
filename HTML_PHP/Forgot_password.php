@@ -1,22 +1,22 @@
 <?php
 session_start();
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
+ini_set('display_errors', 1); // Activation de l'affichage des erreurs
+error_reporting(E_ALL); // Rapport de toutes les erreurs PHP
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php");
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $username     = trim($_POST['username']);    // Récupération du nom d'utilisateur
-    $new_password = trim($_POST['new_password']); // Récupération du nouveau mot de passe
+    $username     = trim($_POST['username']);    // Récupération et nettoyage du nom d'utilisateur
+    $new_password = trim($_POST['new_password']); // Récupération et nettoyage du nouveau mot de passe
 
-    // Vérifier si l'utilisateur existe
+    // Vérification de l'existence de l'utilisateur dans la base de données
     $query = "SELECT id FROM login_streamwave WHERE username = ?";
     if ($stmt = $conn->prepare($query)) {
         $stmt->bind_param("s", $username);
         $stmt->execute();
         $result = $stmt->get_result();
         if ($result->num_rows == 1) {
-            // Mise à jour du mot de passe
+            // Mise à jour du mot de passe dans la base de données
             $updateQuery = "UPDATE login_streamwave SET password = ? WHERE username = ?";
             if ($stmtUpdate = $conn->prepare($updateQuery)) {
                 $stmtUpdate->bind_param("ss", $new_password, $username);
@@ -25,14 +25,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 } else {
                     $error = "Erreur lors de la mise à jour du mot de passe.";
                 }
-                $stmtUpdate->close();
+                $stmtUpdate->close(); // Fermeture de la requête préparée
             } else {
                 $error = "Erreur interne lors de la préparation de la requête de mise à jour.";
             }
         } else {
             $error = "Nom d'utilisateur introuvable.";
         }
-        $stmt->close();
+        $stmt->close(); // Fermeture de la requête préparée
     } else {
         $error = "Erreur interne lors de la préparation de la requête de vérification.";
     }

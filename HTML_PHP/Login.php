@@ -5,13 +5,13 @@ session_start();
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php");
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
-// Vérification de la connexion déjà établie
+// Vérification que la connexion est déjà établie
 if (!isset($conn)) {
     die("Erreur interne : la connexion à la base n'est pas définie.");
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // La fonction trim permet de supprimer les espaces superflus
+    // La fonction trim permet de supprimer les espaces en début et fin de chaîne
     $userName     = trim($_POST['username']); // Récupération du nom d'utilisateur
     $userPassword = trim($_POST['password']);   // Récupération du mot de passe
   

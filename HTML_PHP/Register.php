@@ -1,13 +1,13 @@
 <?php
 session_start();
-require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php"); // Inclusion de Config.php depuis le dossier PHP
+require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php"); // Inclusion du fichier de configuration depuis le dossier PHP
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = trim($_POST['username']); // Récupération et nettoyage du nom d'utilisateur
     $password = trim($_POST['password']); // Récupération et nettoyage du mot de passe
 
-    // Vérifier si l'utilisateur existe déjà
+    // Vérification de l'existence de l'utilisateur dans la base de données
     $queryCheck = "SELECT id FROM login_streamwave WHERE username = ?";
     if ($stmt = $conn->prepare($queryCheck)) {
         $stmt->bind_param("s", $username);
@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if ($result->num_rows > 0) {
             $error = "Nom d'utilisateur déjà existant.";
         } else {
-            // Insertion du nouvel utilisateur
+            // Insertion d'un nouvel utilisateur dans la base de données
             $insertQuery = "INSERT INTO login_streamwave (username, password) VALUES (?, ?)";
             if ($stmtInsert = $conn->prepare($insertQuery)) {
                 $stmtInsert->bind_param("ss", $username, $password);
@@ -25,12 +25,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 } else {
                     $error = "Erreur lors de la création du compte.";
                 }
-                $stmtInsert->close();
+                $stmtInsert->close(); // Fermeture de la requête préparée
             } else {
                 $error = "Erreur interne lors de la préparation de la requête d'insertion.";
             }
         }
-        $stmt->close();
+        $stmt->close(); // Fermeture de la requête préparée
     } else {
         $error = "Erreur interne lors de la préparation de la requête de vérification.";
     }
