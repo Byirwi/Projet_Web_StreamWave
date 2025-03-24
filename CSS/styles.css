@@ -298,10 +298,6 @@ footer .colonnes p:hover {
 #film-player {
     margin-top: 50px;
 }
-
-.content_resumer h1 {
-    text-alrgb(255, 255, 255) center;
-}
 /* Style de la page de connexion */
 button {
     height: 50px;
