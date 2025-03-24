@@ -89,30 +89,30 @@
       <h5>Des questions ? Appelez le 06-46-24-86-76</h5>
       <div class="colonnes">
         <div class="colonne">
-          <p>FAQ</p>
-          <p>Relations Investisseurs</p>
-          <p>Modes de lecture</p>
-          <p>Mentions légales</p>
-          <p>Programmes originaux Netflix</p>
+          <p href="#">FAQ</p>
+          <p href="#">Relations Investisseurs</p>
+          <p href="#">Modes de lecture</p>
+          <p href="#">Mentions légales</p>
+          <p href="#">Programmes originaux Netflix</p>
         </div>
         <div class="colonne">
-          <p>Centre d'aide</p>
-          <p>Relations Investisseurs</p>
-          <p>Modes de lecture</p>
-          <p>Mentions légales</p>
-          <p>Programmes originaux Netflix</p>
+          <p href="#">Centre d'aide</p>
+          <p> href="#"Relations Investisseurs</p>
+          <p href="#">Modes de lecture</p>
+          <p href="#">Mentions légales</p>
+          <p href="#">Programmes originaux Netflix</p>
         </div>
         <div class="colonne">
-          <p>FAQ</p>
-          <p>Recrutement</p>
-          <p>Conditions d'utilisation</p>
-          <p>Nous contacter</p>
+          <p href="#">FAQ</p>
+          <p href="#">Recrutement</p>
+          <p href="#">Conditions d'utilisation</p>
+          <p href="#">Nous contacter</p>
         </div>
         <div class="colonne">
-          <p>Compte</p>
-          <p>Utiliser des cartes cadeaux</p>
-          <p>Confidentialité</p>
-          <p>Test de vitesse</p>
+          <p href="#">Compte</p>
+          <p href="#">Utiliser des cartes cadeaux</p>
+          <p href="#">Confidentialité</p>
+          <p href="#">Test de vitesse</p>
         </div>
       </div>
       <p>StreamWave, France</p>
