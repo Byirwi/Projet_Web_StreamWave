@@ -44,7 +44,7 @@
             <a href=""><img src="..\Public\img films_series\tendances\p9.PNG" alt=""></a>
             <a href=""><img src="..\Public\img films_series\tendances\p10.PNG" alt=""></a>
             <a href=""><img src="..\Public\img films_series\tendances\p11.PNG" alt=""></a>
-            <a href=""><img src="..\Public\LE MAITRE CHINOIS.png" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\LeMaitreChinois.png" alt=""></a>
         </div>
       </section>
       <!-- Fin des tendances -->

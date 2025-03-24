@@ -3,7 +3,6 @@ session_start();
 
 // Inclusion des fichiers nécessaires (Config.php crée déjà $conn)
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php");
-require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
 // Vérification que la connexion est déjà établie
 if (!isset($conn)) {
@@ -22,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $stmt->execute();
         $result = $stmt->get_result();
         if ($result->num_rows === 1 && $row = $result->fetch_assoc()) {
-            if ($userPassword == $row['password']) { // Comparaison directe (à améliorer avec password_verify)
+            if ($userPassword == $row['password']) { // Comparaison directe des mots de passe
                 $_SESSION['user_id'] = $row['id'];
                 header("Location: Accueil.php"); // Redirection vers la page d'accueil
                 exit();

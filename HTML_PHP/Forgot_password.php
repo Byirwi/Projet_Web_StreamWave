@@ -3,7 +3,6 @@ session_start();
 ini_set('display_errors', 1); // Activation de l'affichage des erreurs
 error_reporting(E_ALL); // Rapport de toutes les erreurs PHP
 require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "Config.php");
-require_once(__DIR__ . DIRECTORY_SEPARATOR . ".." . DIRECTORY_SEPARATOR . "PHP" . DIRECTORY_SEPARATOR . "queries.php");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username     = trim($_POST['username']);    // Récupération et nettoyage du nom d'utilisateur
