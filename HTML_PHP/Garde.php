@@ -11,7 +11,7 @@
         <nav>
             <div class="gauche">
                 <a href="Garde.php">
-                  <img src="..\Ressources\Logo StreamWave.png" alt="" height="80">
+                  <img src="..\assets\Logo StreamWave.png" alt="" height="80">
               </a>
             </div>
             <div class="droite">
@@ -21,7 +21,7 @@
           <!-- Fin de la barre de navigation -->
             <!-- Image de fond -->
         <div class="background_img">
-            <img src="..\Ressources\background\Netflix_background.png" alt="">
+            <img src="..\assets\background\Netflix_background.png" alt="">
         </div>
     </div> 
     <!-- Fin de l'image de fond --> 
