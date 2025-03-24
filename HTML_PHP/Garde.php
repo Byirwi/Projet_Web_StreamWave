@@ -16,7 +16,7 @@
               </a>
             </div>
             <div class="droite">
-                <a href="Register.php">Crée un compte</a>
+                <a href="Register.php">Crée un</a>
             </div>
         </nav>
           <!-- Fin de la barre de navigation -->

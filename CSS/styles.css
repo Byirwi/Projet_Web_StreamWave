@@ -67,11 +67,10 @@ body {
     background: rgba(0, 0, 0, 0.8);
     width: 15%;
     padding: 20px 20px;
-    position: relative;  /* Ensure its positioned */
-    z-index: 2;          /* Place above the background */
+    position: relative;
+    z-index: 2;
 }
 
-/* Specific adjustments for forgot password card if needed */
 .login-container.forgot {
     width: 25%;         
     margin: 100 px auto;
@@ -107,6 +106,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px; /* Ajout d'une marge en haut pour descendre tout le conteneur */
 }
 
 .login_button {
@@ -124,12 +124,14 @@ body {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    height: calc(100vh - 383px);
+    height: 75%;
     position: relative;
     z-index: 2;
-    background: rgb(0 0 0 / 0.8);
-    width: 25%;
+    background: #000000cc;
+    width: 20%;
     margin-bottom: 30px;
+    /* Ajout des propriétés pour descendre le bloc */
+    margin-top: 200px; /* Fait descendre le bloc de 200px */
 }
 
 .identifier_login a {
