@@ -44,6 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>Mot de passe oublié</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
@@ -56,14 +57,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
             </div>
             <div class="droite">
-                <a href="Login.php"><p>Connexion</p></a>
+                <a href="Login.php">Connexion</a>
             </div>
         </nav>
-        <!-- Fin de la barre de navigation -->
+        <!-- Fin de la barre de navigation -->in de la barre de navigation -->
     </header>
-    <div class="content">
-        <div class="form-container">
-            <!-- Ajout de la classe "forgot" pour ajuster la carte -->
+    <div class="content">s="content">
+        <div class="form-container">container">
             <div class="login-container">
                 <div class="login-box">
                     <h1>Mot de passe oublié</h1>
@@ -71,7 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     if (isset($error)) { echo "<p style='color:red;'>$error</p>"; }
                     if (isset($success)) { echo "<p style='color:green;'>$success</p>"; }
                     ?>
-                    <form action="forgot_password.php" method="post" id="forgot-password-form" class="form_style">
+                    <form action="Forgot_password.php" method="post" id="forgot-password-form" class="form_style">
                         <div class="mail_password_box">
                             <div class="form-group">
                                 <label for="username">Nom d'utilisateur :</label>
@@ -96,38 +96,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
-    <footer>
-        <!-- Pied de page -->
-        <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
-        <div class="colonnes">
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>Centre d'aide</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Recrutement</p>
-                <p>Conditions d'utilisation</p>
-                <p>Nous contacter</p>
-            </div>
-            <div class="colonne">
-                <p>Compte</p>
-                <p>Utiliser des cartes cadeaux</p>
-                <p>Confidentialité</p>
-                <p>Test de vitesse</p>
-            </div>
-        </div>
-        <p>StreamWave, France</p>
-    </footer>
 </body>
 </html>

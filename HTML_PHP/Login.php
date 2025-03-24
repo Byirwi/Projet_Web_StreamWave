@@ -43,6 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <title>StreamWave</title>
     <link rel="stylesheet" href="../CSS/styles.css">
+    <link rel="stylesheet" href="../CSS/nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 </head>
 <body>
@@ -55,13 +56,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </a>
             </div>
             <div class="droite">
-                <a href="Login.php">Connexion</a>
+                <span>Connexion</span>
             </div>
         </nav>
-        <!-- Fin de la barre de navigation -->
+        <!-- Fin de la barre de navigation -->in de la barre de navigation -->
     </header>
-    <div class="form-container">
-        <div class="login-container">
+    <div class="form-container">s="form-container">
+        <div class="login-container">ner">
             <div class="login-box">
                 <h1>Connexion</h1>
                 <?php
@@ -69,7 +70,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                     echo "<p style='color:red;'>$error</p>"; // Affichage du message d'erreur
                 }
                 ?>
-                <form action="login.php" method="post" id="login-form" class="form_style">
+                <form action="Login.php" method="post" id="login-form" class="form_style">
                     <div class="mail_password_box">
                         <div class="form-group">
                             <label for="username">Nom d'utilisateur</label>

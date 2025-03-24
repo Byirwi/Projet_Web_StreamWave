@@ -3,6 +3,7 @@
     <title>StreamWave</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="..\CSS\styles.css">
+    <link rel="stylesheet" href="..\CSS\nav.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   </head>
   <body>
@@ -24,7 +25,7 @@
       <div class="droite">
         <a href="#"><i class="fas fa-search"></i></a>
         <a href="#"><i class="fas fa-bell"></i></a>
-        <a href="#">Mon compte</a>
+        <a href="Login.php">Mon compte</a>
       </div>
     </nav>
     <!-- Fin de la barre de navigation -->
