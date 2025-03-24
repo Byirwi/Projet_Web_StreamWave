@@ -282,16 +282,25 @@ footer .colonnes p:hover {
     margin: 0 auto;
     width: 15%;
 }
-.content, .content_resumer {
+.content {
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .content_resumer {
-    width: 50%;
+    width: 45%;
+    margin: auto;
+    margin-top: 50px; /* Ajoute un espacement au-dessus du résumé */
+    color: rgb(254, 255, 255);
 }
+
+/* Ajoute un espacement pour le lecteur vidéo */
+#film-player {
+    margin-top: 50px;
+}
+
 .content_resumer h1 {
-    text-align: center;
+    text-alrgb(255, 255, 255) center;
 }
 /* Style de la page de connexion */
 button {

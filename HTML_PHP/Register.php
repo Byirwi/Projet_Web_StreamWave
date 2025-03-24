@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <nav>
             <div class="gauche">
                 <a href="Garde.php">
-                    <img src="../assets/Logo StreamWave.png" alt="" height="80">
+                    <img src="../Public/Logo StreamWave.png" alt="" height="80">
                 </a>
             </div>
             <div class="droite">
@@ -91,42 +91,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </div>
         <!-- Image de fond -->
         <div class="background_img">
-            <img src="../assets/background/Netflix_background.png" alt="">
+            <img src="../Public/background/Netflix_background.png" alt="">
         </div>
     </div>
-    <footer>
-        <!-- Pied de page -->
-        <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
-        <div class="colonnes">
-            <!-- Colonnes du pied de page -->
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>Centre d'aide</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Recrutement</p>
-                <p>Conditions d'utilisation</p>
-                <p>Nous contacter</p>
-            </div>
-            <div class="colonne">
-                <p>Compte</p>
-                <p>Utiliser des cartes cadeaux</p>
-                <p>Confidentialité</p>
-                <p>Test de vitesse</p>
-            </div>
-        </div>
-        <p>StreamWave, France</p>
-    </footer>
 </body>
 </html>

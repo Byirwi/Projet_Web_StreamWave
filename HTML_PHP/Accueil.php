@@ -10,7 +10,7 @@
     <nav>
       <div class="gauche">
       <a href="Garde.php" class="img_logo">
-        <img src="..\assets\Logo StreamWave.png" alt="" height="80">
+        <img src="..\Public\Logo StreamWave.png" alt="" height="80">
       </a>
         <div class="onglets">
           <a href="Accueil.php">Accueil</a>
@@ -34,17 +34,17 @@
       <section class="section tendances">
         <h2>Tendances actuelles</h2>
         <div class="list">
-            <a href=""><img src="..\assets\img films_series\tendances\p1.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p2.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p3.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p4.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p6.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p7.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p8.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p9.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p10.PNG" alt=""></a>
-            <a href=""><img src="..\assets\img films_series\tendances\p11.PNG" alt=""></a>
-            <a href=""><img src="..\assets\LE MAITRE CHINOIS.png" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p1.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p2.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p3.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p4.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p6.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p7.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p8.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p9.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p10.PNG" alt=""></a>
+            <a href=""><img src="..\Public\img films_series\tendances\p11.PNG" alt=""></a>
+            <a href=""><img src="..\Public\LE MAITRE CHINOIS.png" alt=""></a>
         </div>
       </section>
       <!-- Fin des tendances -->
@@ -53,15 +53,15 @@
       <section class="section series-divers">
         <h2>Séries divers</h2>
         <div class="list">
-          <a href="Film_detail\Jessica_jones.html"><img src="..\assets\img films_series\séries divers\o3.PNG" alt=""></a> <!-- ..\Ressources\img films_series\séries divers\r1.PNG -->
-          <a href=""><img src="..\assets\img films_series\séries divers\r1.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv1.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv2.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv3.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv4.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv6.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv7.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\séries divers\tv11.PNG" alt=""></a>
+          <a href="Film_detail\Jessica_jones.html"><img src="..\Public\img films_series\séries divers\o3.PNG" alt=""></a> <!-- ..\Ressources\img films_series\séries divers\r1.PNG -->
+          <a href=""><img src="..\Public\img films_series\séries divers\r1.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv1.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv2.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv3.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv4.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv6.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv7.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\séries divers\tv11.PNG" alt=""></a>
         </div>
       </section>
       <!-- Fin des séries violentes -->
@@ -70,14 +70,14 @@
       <section class="section action-aventure">
         <h2>Les meilleurs films et series d'action et d'aventure</h2>
         <div class="list">
-          <a href=""><img src="..\assets\img films_series\action et aventures\m3.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\action et aventures\m4.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\action et aventures\m5.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\action et aventures\m6.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\action et aventures\r4.PNG" alt=""></a>
-          <a href=""><img src="..\assets\img films_series\action et aventures\tv6.PNG" alt=""></a> 
-          <a href=""><img src="..\assets\img films_series\action et aventures\tv7.PNG" alt=""></a> 
-          <a href=""><img src="..\assets\img films_series\action et aventures\tv11.PNG" alt=""></a> 
+          <a href=""><img src="..\Public\img films_series\action et aventures\m3.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\action et aventures\m4.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\action et aventures\m5.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\action et aventures\m6.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\action et aventures\r4.PNG" alt=""></a>
+          <a href=""><img src="..\Public\img films_series\action et aventures\tv6.PNG" alt=""></a> 
+          <a href=""><img src="..\Public\img films_series\action et aventures\tv7.PNG" alt=""></a> 
+          <a href=""><img src="..\Public\img films_series\action et aventures\tv11.PNG" alt=""></a> 
       </section>
       <!-- Fin des films d'action et aventure -->
       
