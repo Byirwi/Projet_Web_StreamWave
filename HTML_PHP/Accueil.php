@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>StreamWave</title>
@@ -118,5 +119,7 @@
       <p>StreamWave, France</p>
     </footer>
       <!-- Fin du pied de page -->
+    
+    <!-- Scripts -->
     </body>
 </html>

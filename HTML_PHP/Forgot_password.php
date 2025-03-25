@@ -97,38 +97,5 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </div>
         </div>
     </div>
-    <footer>
-        <!-- Pied de page -->
-        <h5>Des questions ? Appelez le 06 46 24 86 76</h5>
-        <div class="colonnes">
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>Centre d'aide</p>
-                <p>Relations Investisseurs</p>
-                <p>Modes de lecture</p>
-                <p>Mentions légales</p>
-                <p>Programmes originaux Netflix</p>
-            </div>
-            <div class="colonne">
-                <p>FAQ</p>
-                <p>Recrutement</p>
-                <p>Conditions d'utilisation</p>
-                <p>Nous contacter</p>
-            </div>
-            <div class="colonne">
-                <p>Compte</p>
-                <p>Utiliser des cartes cadeaux</p>
-                <p>Confidentialité</p>
-                <p>Test de vitesse</p>
-            </div>
-        </div>
-        <p>StreamWave, France</p>
-    </footer>
 </body>
 </html>
