@@ -26,82 +26,6 @@ body {
     opacity: 0.5;
 }
 
-/* Style de la barre de navigation */
-nav {
-    margin-top: 10px; /* Ajustable selon besoin */
-    padding: 0 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    color: #ffffff;
-    z-index: 2;
-    height: 50px;
-    background-color: black;
-}
-
-/* Centrage des éléments dans la barre de navigation */
-nav .gauche, 
-nav .droite {
-    display: flex;
-    align-items: center;
-}
-
-nav .gauche {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav .gauche .onglets {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10px;
-}
-
-nav .gauche .onglets p {
-    margin-left: 10px;
-    cursor: pointer;
-    color: #909191;
-}
-
-nav .gauche .onglets p:hover {
-    color: #fff;
-}
-
-nav .gauche .onglets a {
-    margin-left: 10px;
-    cursor: pointer;
-    color: #909191;
-    text-decoration: none;
-    background: none; /* Remove background */
-    padding: 0;       /* Remove padding */
-    font-weight: normal; /* Match font style with p */
-    transition: color 0.3s;
-    margin-top: -5px; /* Lève les liens de la nav de 5px */
-}
-
-nav .gauche .onglets a:hover {
-    color: #fff;
-}
-
-nav .droite {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-nav .droite a {
-    color: white;
-    text-decoration: none;
-    margin-right: 15px; /* Ajout d'une marge pour espacer les images/icônes */
-    margin-top: -5px; /* Lève les liens de la nav de 5px */
-}
-
-nav .droite p {
-    margin-right: 10px;
-    cursor: pointer;
-}
-
 /* Style pour les tests */
 .form-container {
     display: flex;
@@ -141,13 +65,12 @@ nav .droite p {
     align-items: center;
     justify-content: center;
     background: rgba(0, 0, 0, 0.8);
-    width: 50%;
+    width: 15%;
     padding: 20px 20px;
-    position: relative;  /* Ensure its positioned */
-    z-index: 2;          /* Place above the background */
+    position: relative;
+    z-index: 2;
 }
 
-/* Specific adjustments for forgot password card if needed */
 .login-container.forgot {
     width: 25%;         
     margin: 100 px auto;
@@ -183,6 +106,7 @@ nav .droite p {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px; /* Ajout d'une marge en haut pour descendre tout le conteneur */
 }
 
 .login_button {
@@ -200,12 +124,14 @@ nav .droite p {
     justify-content: center;
     align-items: center;
     column-gap: 10px;
-    height: calc(100vh - 383px);
+    height: 75%;
     position: relative;
     z-index: 2;
-    background: rgb(0 0 0 / 0.8);
-    width: 25%;
+    background: #000000cc;
+    width: 20%;
     margin-bottom: 30px;
+    /* Ajout des propriétés pour descendre le bloc */
+    margin-top: 200px; /* Fait descendre le bloc de 200px */
 }
 
 .identifier_login a {
